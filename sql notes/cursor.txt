@@ -1,0 +1,31 @@
+What is a cursor in stored procedure?
+
+To handle a result set inside a stored procedure, you use a cursor. A cursor allows you to iterate a set of rows returned by a query and process each row accordingly. 
+
+The set of rows the cursor holds is referred to as the active set.
+
+
+Implicit Cursors:
+
+automatically created by Oracle .
+
+Whenever a DML statement (INSERT, UPDATE and DELETE) is issued, an implicit cursor is associated with this statement. 
+
+always has attributes such as %FOUND== affected one or more rows or a SELECT INTO statement
+
+ %ISOPEN==Always returns FALSE for implicit cursors, because Oracle closes the SQL cursor automatically after executing its associated SQL statement.
+
+ %NOTFOUND== It returns TRUE if an INSERT, UPDATE, or DELETE statement affected no rows, or a SELECT INTO statement returned no rows. Otherwise, it returns FALSE.
+
+ and %ROWCOUNT==Returns the number of rows affected by an INSERT, UPDATE, or DELETE statement, or returned by a SELECT INTO statement.
+
+
+Explicit cursors:
+
+programmer-defined cursors . 
+
+An explicit cursor should be defined in the declaration section of the PL/SQL Block.
+
+It is created on a SELECT Statement which returns more than one row.
+
+Read only: you cannot update data in the underlying table through the cursor.

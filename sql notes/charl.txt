@@ -1,0 +1,12 @@
+select * form users u 
+
+join transactions t
+
+where u.id=t.id
+
+ and id=5;
+
+select * from transact
+
+
+
