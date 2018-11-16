@@ -1,0 +1,53 @@
+For example, the browser translated the URL http://www.nowhere123.com/doc/index.html into the following request message:
+
+GET /docs/index.html HTTP/1.1
+Host: www.nowhere123.com
+Accept: image/gif, image/jpeg, */*
+Accept-Language: en-us
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)
+(blank line)
+
+An example of the HTTP response message is as shown:
+
+
+
+
+
+
+Example: 404 File Not Found
+In this GET request, the request-URL "/t.html" cannot be found under the server’s document directory. The server returns an error "404 Not Found".
+
+GET /t.html HTTP/10
+(enter twice to create a blank line)
+HTTP/1.1 404 Not Found
+Date: Sun, 18 Oct 2009 10:36:20 GMT
+Server: Apache/2.2.14 (Win32)
+Content-Length: 204
+Connection: close
+Content-Type: text/html; charset=iso-8859-1
+   
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /t.html was not found on this server.</p>
+</body></html>
+
+
+ a web application or web app is a client–server computer program which the client (including the user interface and client-side logic) runs in a web browser. 
+
+
+
+. A specific set of communication rules is called a protocol. 
+
+TCP(Transmission Commission Protocol)creates a connection between the source and destination node and keeps it live until the communication is active. TCP breaks large data into smaller packets and also ensures that the data integrity is intact once it is reassembled at the destination node.
+
+Firewalls can block ports and programs that try to gain unauthorized access to your computer. proxy servers basically hide your internal network from the Internet. 
+
+
+https://www.instantssl.com/https-tutorials/what-is-https.html
+https://yourbusiness.azcentral.com/difference-between-firewall-proxy-server-20024.html
+https://www.webopedia.com/TERM/F/ftp.html
+http://www.ntu.edu.sg/home/ehchua/programming/webprogramming/http_basics.html

@@ -1,0 +1,15 @@
+Static: It is mainly used for memory management.
+
+1. Static variable: It is mainly used to refer common property of all objects. If we use static keyword with a variable then it will belongs to whole class instead of particular object. Static variables acquire memory at the time of compilation.
+
+2. Static methods: If we use static keyword with methods then there is no need of object to invoke that static method. We can call directly to static methods and outside class we can call them using “ClassName.MethodName()”.
+
+3. Static block: static blocks are executed before main() method at class loading time. It’s mainly used to initialize static data members.
+
+Final: It is used to restrict the user.
+
+1. Final variable: if we declare a variable as final then it will be treated as constant. We can’t change the value of final variable.
+
+2. Final Method: If we declare a method final then we can’t override it.
+
+3. Final class; If we declare a class as final, we can’t inherit it.

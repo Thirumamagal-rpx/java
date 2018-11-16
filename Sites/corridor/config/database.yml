@@ -1,0 +1,33 @@
+
+development: 
+  adapter: postgresql
+  encoding: unicode
+  pool: "<%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>"
+  username: "postgres"
+  password: "postgres"
+  pool: "<%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>"
+  port: 5435
+  database: corridor_development
+  
+  
+test: 
+  adapter: postgresql
+  encoding: unicode
+  pool: "<%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>"
+  username: "postgres"
+  password: "postgres"
+  pool: "<%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>"
+  port: 5435
+  database: corridor_development
+  
+  
+production: 
+  adapter: postgresql
+  encoding: unicode
+  pool: "<%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>"
+  username: "postgres"
+  password: "postgres"
+  pool: "<%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>"
+  port: 5435
+  database: corridor_development
+  

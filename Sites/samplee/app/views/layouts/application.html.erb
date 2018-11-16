@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Samplee</title>
+    <%= csrf_meta_tags %>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.css">
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
+  </head>
+
+  <body>
+
+   <div class="container">
+  <%= yield %>
+</div>
+
+
+    
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container" >
+    <!-- <div class="navbar-header"> -->
+    <!--   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+       <img src="https://corridor.pramati.com/wp-content/uploads/2015/12/logo_corridor_ev3.png" alt="Corridor" class="logo_transparent"> -->
+       <a href="/users/"> <img src="https://corridor.pramati.com/wp-content/uploads/2015/12/logo_corridor_ev3.png" alt="Corridor" class="logo_transparent" ></a>
+        <div class="cometo">
+          <a class="We" href="">HOW WE DO IT</a>
+          <a class="Apps" href="/users/#idea">APPS</a>
+          <a class="signup" href="/users/new">SIGN UP </a>
+          <a class="login" href="/sessions/new">LOGIN </a>
+
+          <a href="#" id="search-btn"><i class="icon-minti-search"></i></a>
+        </div>
+    <!-- </div> -->
+  <!-- </div> -->
+</nav>
+
+
+
+
+<footer id="footer">
+   <div class="container" >
+      <div class="four columns">
+         <div id="text-2" class="widget widget_text">
+            <h3>CORRIDOR</h3>
+            <div class="textwidget">Helping foster innovation by investing in people and ideas. Combining technology expertise with entrepreneurial skills to help build creative solutions.</div>
+         </div>
+      </div>
+      <div class="four columns">
+         <div id="text-7" class="widget widget_text">
+            <div class="textwidget">
+               <p>&nbsp;</p>
+            </div>
+         </div>
+      </div>
+      <div class="four columns">
+         <div id="text-9" class="widget widget_text">
+            <div class="textwidget">
+               <p>&nbsp;</p>
+            </div>
+         </div>
+      </div>
+      <div class="four columns">
+         <div id="text-10" class="widget widget_text">
+            <h3>Contact Us</h3>
+            <div class="textwidget">
+               <p><a href="http://www.pramati.com/contact/" target="_blank">http://www.pramati.com/contact/</a></p>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.js"></script>
+ -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+  </body>
+</html>

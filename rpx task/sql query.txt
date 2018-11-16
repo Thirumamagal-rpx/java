@@ -1,0 +1,18 @@
+SELECT p.patnum,  pc.claim_num FROM core.pats as p left join
+core.pat_claims pc
+on p.id= pc.pat_id
+limit 5
+
+select * from core.pats
+SELECT * FROM core.pat_claims
+
+Megaform documents:
+
+Appeal Outcomes
+Damages
+Judgement
+Default Judgement
+Judgement As a Matter Of Law
+Preliminary Injunction
+Summary Judgement
+Verdict

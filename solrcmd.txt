@@ -1,0 +1,30 @@
+<!-- stop it and execute next steps
+
+
+rvm
+
+gemset
+
+scopes
+ -->
+  # post 'launch/create'   => 'launch#create'
+
+
+
+
+
+
+java -Durl=http://localhost:8983/solr/al.id=pdf1 -jar post.jar solr-word.pdf
+
+
+java -Durl=http://localhost:8983/solr/techproducts/update/extract -jar C:\Users\thirumamagalm\Desktop\solr-7.5.0\example\exampledocs\post.jar C:\Users\thirumamagalm\Desktop\solr-7.5.0\example\exampledocs\*.xml
+
+
+java -jar post.jar -Durl=http://localhost:8983/solr/new_core/update/extract
+=====================================================================
+
+solr create_core -c mycore -p 8983
+
+C:\Users\thirumamagalm\Desktop\solr-7.5.0\example>java -Dtype=text/csv -Dc=prod
+-jar post.jar C:\Users\thirumamagalm\Desktop\solr-7.5.0\example\techproducts\sol
+r\prod\books.csv

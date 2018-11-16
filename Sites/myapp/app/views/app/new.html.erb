@@ -1,0 +1,18 @@
+
+
+
+<%= form_with scope: :app, url:app_new_path, local: true do |form| %>
+  <p>
+    <%= form.label :e_mail %><br>
+    <%= form.text_field :e_mail %>
+  </p>
+ 
+  <p>
+    <%= form.label :password %><br>
+    <%= form.text_area :password %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

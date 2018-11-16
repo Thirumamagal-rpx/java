@@ -1,0 +1,2 @@
+ var queryString = Math.random(); 
+  var cellFunction = '=IMPORTHTML("<url>?","table",<index>)';

@@ -1,0 +1,61 @@
+
+Deleting Columns and Rows:
+
+function deletecolumns() {
+  var spreadsheet = SpreadsheetApp.getActive();
+  spreadsheet.getRange('J:L').activate();
+  spreadsheet.getActiveSheet().deleteColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+  spreadsheet.getRange('Q:W').activate();
+  spreadsheet.getActiveSheet().deleteColumns(spreadsheet.getActiveRange().getColumn(), spreadsheet.getActiveRange().getNumColumns());
+  spreadsheet.getRange('110:1000').activate();
+  spreadsheet.setCurrentCell(spreadsheet.getRange('E110'));
+  spreadsheet.getActiveSheet().deleteRows(spreadsheet.getActiveRange().getRow(), spreadsheet.getActiveRange().getNumRows());
+};
+
+
+
+Highlighting:
+
+function myfunction() {
+  var spreadsheet = SpreadsheetApp.getActive();
+    
+ 
+  var spread = SpreadsheetApp.getActiveSpreadsheet();
+  var spreadsheet = spread.getSheets()[0];
+ Logger.log(SpreadsheetApp.getActiveSpreadsheet());
+
+ for( var i=2;i<=spreadsheet.getLastRow();i++)
+ {
+   var firstCol=spreadsheet.getRange(i,7);
+   var secondCol=spreadsheet.getRange(i,14);
+   var firstColVal=Number(firstCol.getValue().split(' ')[0]);
+   var secondColVal=Number(secondCol.getValue().split(' ')[0]);
+
+   if(!(isNaN(firstColVal) || isNaN(secondColVal))){
+     if(firstColVal < secondColVal)
+       secondCol.setBackground("red");
+        
+   else
+     firstCol.setBackground("red");
+     
+ 
+   }
+ }
+};
+ 
+
+
+
+
+
+
+
+function myFunction() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+var sheet = ss.getSheets()[0];
+
+var range = sheet.getRange("D1:G25");
+range.deleteCells(SpreadsheetApp.Dimension.COLUMNS);
+  
+ 
+sheet.insertImage("https://www.google.com/images/srpr/logo3w.png", 4, 1);

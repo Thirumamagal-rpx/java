@@ -1,0 +1,218 @@
+  def check_columns(board = @board)
+    board.each do |col|
+      (0..3).each do |idx|
+        won = col[idx..(idx + 3)].all? { |el| el == col[idx] && !el.nil? }
+        return true if won
+      end
+    end
+
+    false
+  end
+
+  def check_rows
+    transposed_board = @board.transpose
+    check_columns(transposed_board)
+  end
+
+  def check_upward_diaganols
+    (0..3).each do |col_idx|
+      (0..3).each do |col_height|
+        diagonal_group = find_upward_diaganol_starting_at(col_idx, col_height)
+        if diagonal_group.all?{ |el| diagonal_group.first == el && !el.nil?}
+          return true
+        end
+      end
+    end
+
+    false
+  end
+
+  def find_upward_diaganol_starting_at(col_idx, col_height)
+    diagonal_group = []
+
+    (col_idx..(col_idx + 3)).each_with_index do |col, height|
+      diagonal_group << board[col][col_height + height]
+    end
+
+    diagonal_group
+  end
+
+  def check_downward_diaganols
+    (0..3).each do |col_idx|
+      (3..6).each do |col_height|
+        diagonal_group = find_downward_diaganol_starting_at(col_idx, col_height)
+        if diagonal_group.all?{ |el| diagonal_group.first == el && !el.nil?}
+          return true
+        end
+      end
+    end
+
+    false
+  end
+
+  def find_downward_diaganol_starting_at(col_idx, col_height)
+    diagonal_group = []
+
+    (col_idx..(col_idx + 3)).each_with_index do |col, height|
+      diagonal_group << board[col][col_height - height]
+    end
+
+    diagonal_group
+  end
+
+
+===================================
+
+	# # method to check wins
+	# def check_wins(column, player)
+	# 	# row checking
+	# 	for i in 0...@board.length
+	# 		row = @board[i]
+	# 		row_counter = 0
+	# 		for j in 0...row.length
+	# 			if row[j] === player
+	# 				row_counter += 1
+	# 				if row_counter === 4
+	# 					return true
+	# 				end
+	# 			else
+	# 				row_counter = 0
+	# 			end
+	# 		end
+	# 	end
+
+	# 	# column checking
+	# 	column_counter = 0
+	# 	for k in 0...@board.length
+	# 		if @board[k][column] === player
+	# 			column_counter += 1
+	# 			if column_counter === 4
+	# 				return true;
+	# 			end
+	# 		end
+	# 	end
+
+	# 	# diagonal checking, chose to go to 11 because coordinates [5,6] can be
+	# 	#reached in this loop
+	# 	for diagonal_sum in 0..11
+	# 		diagonal_counter = 0
+	# 		for x in 0..diagonal_sum
+	# 			y = diagonal_sum - x
+	# 			if (defined?(@@board[x][y])).nil?
+	# 				# some of the coordinates being checked are not defined, this is to
+	# 				# keep looping through the board to check values on the board
+	# 				next
+	# 			end
+	# 			if @@board[x][y] === player
+	# 				diagonal_counter += 1
+	# 				if diagonal_counter === 4
+	# 					return true
+	# 				end
+	# 			else
+	# 				diagonal_counter = 0
+	# 			end
+	# 		end
+	# 	end
+
+	# 	# other diagonal checking
+	# 	for diagonal_diff in (6).downto(-5)
+	# 		y = 0
+	# 		other_diagonal_counter = 0
+	# 		for x in 0...7
+	# 			y = diagonal_diff + x
+	# 			if (defined?(@@board[x][y])).nil? #if a space is undefined, just keep checking
+	# 				next
+	# 			end
+	# 			if y < 7
+	# 				if @@board[x][y] === player
+	# 					other_diagonal_counter += 1
+	# 					if other_diagonal_counter === 4
+	# 						return true
+	# 					end
+	# 				else
+	# 					other_diagonal_counter = 0
+	# 				end
+	# 			else
+	# 				break;
+	# 			end
+	# 		end
+	# 	end
+	# 	# the check_wins method has many nested for loops, which is a
+	# 	# runtime complexity of O(n^2)
+	# 	return false
+	# end
+
+=====================================
+def check_horizontal_wins
+ 
+    (0..5).each do |x|
+		  (0..6).each do |y|
+			    # horizontal
+			  if @board[x][y] == @turn &&
+			    @board[x][y+1] == @turn &&
+			      @board[x][y+2] == @turn &&
+			        @board[x][y+3] == @turn
+			          puts "#{@turn} wins!"
+			          @game_over = true
+              end
+        end        
+      end
+      end
+
+ def check_vertical_wins
+  0.upto(6) do |x|
+    0.upto(2) do |y|
+      return true if @board[x][y] != ' ' && @board[x][y] == @board[x][y + 1] && @board[x][y + 1] == @board[x][y + 2] && @board[x][y + 2] == @board[x][y + 3]
+    end
+  end
+  false
+ end
+
+ def check_diagonal_wins
+  0.upto(3) do |x|
+    0.upto(2) do |y|
+      return true if @board[x][y] != ' ' && @board[x][y] == @board[x + 1][y + 1] && @board[x + 1][y + 1] == @board[x + 2][y + 2] && @board[x + 2][y + 2] == @board[x + 3][y + 3]
+    end
+col
+    3.upto(5) do |y|
+      return true if @board[x][y] != ' ' && @board[x][y] == @board[x + 1][y - 1] && @board[x + 1][y - 1] == @board[x + 2][y - 2] && @board[x + 2][y - 2] == @board[x + 3][y - 3]
+    end
+  end
+  false
+end
+
+def draw
+  puts "Oh wow! Both of you either suck or are really good. That's a draw!"
+end
+
+=====================================
+
+ def gameover
+    @draw=false
+    @counter==42
+    if @turn == 'R'
+      winner = 'RED wins the game!'
+    else
+      winner = 'YELLOW wins the game!' 
+     end
+     if @counter==42
+      puts "match Draw"
+      @draw=true
+      return false
+    end
+    puts winner
+    winner
+  end
+
+=======================
+
+  def turns
+    won = false
+    until @turn_number > 42 || won
+    switch_player
+       @turn_number += 1
+      display
+      won = line_match?
+    end
+    won ? gameover : draw
+  end

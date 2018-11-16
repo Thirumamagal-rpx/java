@@ -1,0 +1,5 @@
+https://stackoverflow.com/questions/18222814/need-help-finding-the-maximum-value-in-a-column-in-google-sheets-using-google-ap
+
+https://stackoverflow.com/questions/16804488/highlight-cell-in-cola-if-cells-b-j-on-row-are-empty
+
+https://support.geckoboard.com/hc/en-us/articles/206260188-Use-Google-Sheets-ImportHTML-function-to-display-data-in-Geckoboard

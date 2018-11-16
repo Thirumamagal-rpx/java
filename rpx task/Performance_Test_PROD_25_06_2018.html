@@ -1,0 +1,2296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Performance Test Results</title>
+<style type="text/css">
+				body {
+					font:normal 68% verdana,arial,helvetica;
+					color:#000000;
+				}
+				table tr td, table tr th {
+					font-size: 68%;
+				}
+				table.details tr th{
+				    color: #ffffff;
+					font-weight: bold;
+					text-align:center;
+					background:#2674a6;
+					white-space: nowrap;
+				}
+				table.details tr td{
+					background:#eeeee0;
+					white-space: nowrap;
+				}
+				h1 {
+					margin: 0px 0px 5px; font: 165% verdana,arial,helvetica
+				}
+				h2 {
+					margin-top: 1em; margin-bottom: 0.5em; font: bold 125% verdana,arial,helvetica
+				}
+				h3 {
+					margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica
+				}
+				h4 {
+					margin: 0px 0px 3px; font: 125% Trebuchet MS,arial,helvetica
+				}
+				.Failure {
+					font-weight:bold; color:red;
+				}
+				
+	
+				img
+				{
+				  border-width: 0px;
+				}
+				
+				.expand_link
+				{
+				   position=absolute;
+				   right: 0px;
+				   width: 27px;
+				   top: 1px;
+				   height: 27px;
+				}
+				
+				.page_details
+				{
+				   display: none;
+				}
+                                
+                                .page_details_expanded
+                                {
+                                    display: block;
+                                    display/* hide this definition from  IE5/6 */: table-row;
+                                }
+
+
+			</style>
+<script language="JavaScript">
+                           function expand(details_id)
+			   {
+			      
+			      document.getElementById(details_id).className = "page_details_expanded";
+			   }
+			   
+			   function collapse(details_id)
+			   {
+			      
+			      document.getElementById(details_id).className = "page_details";
+			   }
+			   
+			   function change(details_id)
+			   {
+			      if(document.getElementById(details_id+"_image").src.match("expand"))
+			      {
+			         document.getElementById(details_id+"_image").src = "collapse.png";
+			         expand(details_id);
+			      }
+			      else
+			      {
+			         document.getElementById(details_id+"_image").src = "expand.png";
+			         collapse(details_id);
+			      } 
+                           }
+			</script>
+</head>
+<body>
+<h1>Performance Test Results</h1>
+<hr size="1">
+<table width="100%">
+<tr>
+<td align="left">
+<h4>
+<strong>Environment: </strong>PROD</h4>
+</td>
+</tr>
+<tr>
+<td align="left">Date report: 2018/06/25 04:15</td>
+</tr>
+</table>
+<hr size="1">
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th style="width:15%;">Page Name</th><th>Section Name</th><th>Page URL</th><th># Number Of Iterations</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th></th>
+</tr>
+<tr valign="top" class="">
+<td align="center" rowspan="8"><strong>Entity Details Page </strong></td><td align="left">Basic Page Load</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/ent/352299">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">11 sec</td><td align="right">10.3 sec</td><td align="right">11.7 sec</td><td align="center"><a href="javascript:change('section_details_Entity Details Page @Basic Page Load')"><img alt="expand/collapse" src="expand.png" id="section_details_Entity Details Page @Basic Page Load_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Entity Details Page @Basic Page Load">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Basic Page Load"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">11.7</td><td align="right">564657</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">10.3</td><td align="right">564657</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Litigation Campaign</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/ent/352299">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">9.5 sec</td><td align="right">9.17 sec</td><td align="right">9.89 sec</td><td align="center"><a href="javascript:change('section_details_Entity Details Page @Litigation Campaign')"><img alt="expand/collapse" src="expand.png" id="section_details_Entity Details Page @Litigation Campaign_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Entity Details Page @Litigation Campaign">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Litigation Campaign"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">9.17</td><td align="right">564657</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">9.89</td><td align="right">564657</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Patent Information</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/ent/352299">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">9.85 sec</td><td align="right">9.66 sec</td><td align="right">10 sec</td><td align="center"><a href="javascript:change('section_details_Entity Details Page @Patent Information')"><img alt="expand/collapse" src="expand.png" id="section_details_Entity Details Page @Patent Information_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Entity Details Page @Patent Information">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Patent Information"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">10.0</td><td align="right">564657</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">9.66</td><td align="right">564657</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Petitions</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/ent/352299">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">9.3 sec</td><td align="right">9.01 sec</td><td align="right">9.68 sec</td><td align="center"><a href="javascript:change('section_details_Entity Details Page @Petitions')"><img alt="expand/collapse" src="expand.png" id="section_details_Entity Details Page @Petitions_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Entity Details Page @Petitions">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Petitions"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">9.01</td><td align="right">564657</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">9.68</td><td align="right">564657</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Related Entities </td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/ent/352299">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">10.1 sec</td><td align="right">9.63 sec</td><td align="right">10.6 sec</td><td align="center"><a href="javascript:change('section_details_Entity Details Page @Related Entities ')"><img alt="expand/collapse" src="expand.png" id="section_details_Entity Details Page @Related Entities _image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Entity Details Page @Related Entities ">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Related Entities "</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">9.63</td><td align="right">564656</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">10.6</td><td align="right">564657</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Affiliates</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/ent/352299">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">10 sec</td><td align="right">9.79 sec</td><td align="right">10.3 sec</td><td align="center"><a href="javascript:change('section_details_Entity Details Page @Affiliates')"><img alt="expand/collapse" src="expand.png" id="section_details_Entity Details Page @Affiliates_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Entity Details Page @Affiliates">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Affiliates"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">10.3</td><td align="right">564657</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">9.79</td><td align="right">564657</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Recent Activity</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/ent/352299">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">9.8 sec</td><td align="right">9.45 sec</td><td align="right">10.1 sec</td><td align="center"><a href="javascript:change('section_details_Entity Details Page @Recent Activity')"><img alt="expand/collapse" src="expand.png" id="section_details_Entity Details Page @Recent Activity_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Entity Details Page @Recent Activity">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Recent Activity"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">10.1</td><td align="right">564657</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">9.45</td><td align="right">564657</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Total Page Load</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/ent/352299">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">10.4 sec</td><td align="right">10.3 sec</td><td align="right">10.5 sec</td><td align="center"><a href="javascript:change('section_details_Entity Details Page @Total Page Load')"><img alt="expand/collapse" src="expand.png" id="section_details_Entity Details Page @Total Page Load_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Entity Details Page @Total Page Load">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Total Page Load"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">10.3</td><td align="right">564657</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">10.5</td><td align="right">564657</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th style="width:15%;">Page Name</th><th>Section Name</th><th>Page URL</th><th># Number Of Iterations</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th></th>
+</tr>
+<tr valign="top" class="">
+<td align="center" rowspan="9"><strong>Litigation Details Page </strong></td><td align="left">Basic Page Load</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/lit/37098">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1.99 sec</td><td align="right">1.73 sec</td><td align="right">2.25 sec</td><td align="center"><a href="javascript:change('section_details_Litigation Details Page @Basic Page Load')"><img alt="expand/collapse" src="expand.png" id="section_details_Litigation Details Page @Basic Page Load_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Litigation Details Page @Basic Page Load">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Basic Page Load"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">2.25</td><td align="right">64671</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">1.73</td><td align="right">51259</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Patent Information</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/lit/37098">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1.88 sec</td><td align="right">1.88 sec</td><td align="right">1.88 sec</td><td align="center"><a href="javascript:change('section_details_Litigation Details Page @Patent Information')"><img alt="expand/collapse" src="expand.png" id="section_details_Litigation Details Page @Patent Information_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Litigation Details Page @Patent Information">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Patent Information"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">1.88</td><td align="right">54364</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">1.88</td><td align="right">78408</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Litigation Campaign</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/lit/37098">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">4.63 sec</td><td align="right">4.39 sec</td><td align="right">4.87 sec</td><td align="center"><a href="javascript:change('section_details_Litigation Details Page @Litigation Campaign')"><img alt="expand/collapse" src="expand.png" id="section_details_Litigation Details Page @Litigation Campaign_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Litigation Details Page @Litigation Campaign">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Litigation Campaign"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">4.87</td><td align="right">378993</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">4.39</td><td align="right">378993</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Docket Entries</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/lit/37098">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">3.16 sec</td><td align="right">2.64 sec</td><td align="right">3.69 sec</td><td align="center"><a href="javascript:change('section_details_Litigation Details Page @Docket Entries')"><img alt="expand/collapse" src="expand.png" id="section_details_Litigation Details Page @Docket Entries_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Litigation Details Page @Docket Entries">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Docket Entries"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">3.69</td><td align="right">78408</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">2.64</td><td align="right">78408</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Plaintiff</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/lit/37098">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">2.48 sec</td><td align="right">1.87 sec</td><td align="right">3.1 sec</td><td align="center"><a href="javascript:change('section_details_Litigation Details Page @Plaintiff')"><img alt="expand/collapse" src="expand.png" id="section_details_Litigation Details Page @Plaintiff_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Litigation Details Page @Plaintiff">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Plaintiff"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">1.87</td><td align="right">78408</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">3.10</td><td align="right">78408</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Defendants</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/lit/37098">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">3.58 sec</td><td align="right">3.3 sec</td><td align="right">3.85 sec</td><td align="center"><a href="javascript:change('section_details_Litigation Details Page @Defendants')"><img alt="expand/collapse" src="expand.png" id="section_details_Litigation Details Page @Defendants_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Litigation Details Page @Defendants">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Defendants"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">3.85</td><td align="right">78408</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">3.30</td><td align="right">78408</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Other Parties</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/lit/37098">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">3.57 sec</td><td align="right">3.37 sec</td><td align="right">3.77 sec</td><td align="center"><a href="javascript:change('section_details_Litigation Details Page @Other Parties')"><img alt="expand/collapse" src="expand.png" id="section_details_Litigation Details Page @Other Parties_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Litigation Details Page @Other Parties">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Other Parties"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">3.37</td><td align="right">78408</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">3.77</td><td align="right">78408</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Accused Products</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/lit/37098">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">2.43 sec</td><td align="right">1.93 sec</td><td align="right">2.93 sec</td><td align="center"><a href="javascript:change('section_details_Litigation Details Page @Accused Products')"><img alt="expand/collapse" src="expand.png" id="section_details_Litigation Details Page @Accused Products_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Litigation Details Page @Accused Products">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Accused Products"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">1.93</td><td align="right">78408</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">2.93</td><td align="right">78408</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Total Page Load</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/lit/37098">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">6.2 sec</td><td align="right">5.82 sec</td><td align="right">6.66 sec</td><td align="center"><a href="javascript:change('section_details_Litigation Details Page @Total Page Load')"><img alt="expand/collapse" src="expand.png" id="section_details_Litigation Details Page @Total Page Load_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Litigation Details Page @Total Page Load">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Total Page Load"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">5.82</td><td align="right">378993</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">6.66</td><td align="right">378993</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th style="width:15%;">Page Name</th><th>Section Name</th><th>Page URL</th><th># Number Of Iterations</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th></th>
+</tr>
+<tr valign="top" class="">
+<td align="center" rowspan="8"><strong>PTAB Details Page </strong></td><td align="left">Basic Page Load</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/ptabs/4138">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">3.49 sec</td><td align="right">3 sec</td><td align="right">3.99 sec</td><td align="center"><a href="javascript:change('section_details_PTAB Details Page @Basic Page Load')"><img alt="expand/collapse" src="expand.png" id="section_details_PTAB Details Page @Basic Page Load_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_PTAB Details Page @Basic Page Load">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Basic Page Load"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">3.99</td><td align="right">223763</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">3.00</td><td align="right">223763</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Petitioner</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/ptabs/4138">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">3.14 sec</td><td align="right">3.1 sec</td><td align="right">3.18 sec</td><td align="center"><a href="javascript:change('section_details_PTAB Details Page @Petitioner')"><img alt="expand/collapse" src="expand.png" id="section_details_PTAB Details Page @Petitioner_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_PTAB Details Page @Petitioner">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Petitioner"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">3.10</td><td align="right">223763</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">3.18</td><td align="right">223763</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Patent Owner</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/ptabs/4138">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">2.56 sec</td><td align="right">2.07 sec</td><td align="right">3.06 sec</td><td align="center"><a href="javascript:change('section_details_PTAB Details Page @Patent Owner')"><img alt="expand/collapse" src="expand.png" id="section_details_PTAB Details Page @Patent Owner_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_PTAB Details Page @Patent Owner">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Patent Owner"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">2.07</td><td align="right">223763</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">3.06</td><td align="right">223763</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Challenged Patent</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/ptabs/4138">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">3.14 sec</td><td align="right">3.06 sec</td><td align="right">3.22 sec</td><td align="center"><a href="javascript:change('section_details_PTAB Details Page @Challenged Patent')"><img alt="expand/collapse" src="expand.png" id="section_details_PTAB Details Page @Challenged Patent_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_PTAB Details Page @Challenged Patent">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Challenged Patent"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">3.06</td><td align="right">223763</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">3.22</td><td align="right">223763</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Related Campaigns</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/ptabs/4138">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">2.95 sec</td><td align="right">2.93 sec</td><td align="right">2.97 sec</td><td align="center"><a href="javascript:change('section_details_PTAB Details Page @Related Campaigns')"><img alt="expand/collapse" src="expand.png" id="section_details_PTAB Details Page @Related Campaigns_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_PTAB Details Page @Related Campaigns">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Related Campaigns"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">2.97</td><td align="right">223763</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">2.93</td><td align="right">223763</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Related Petitions</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/ptabs/4138">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">3.24 sec</td><td align="right">3.12 sec</td><td align="right">3.35 sec</td><td align="center"><a href="javascript:change('section_details_PTAB Details Page @Related Petitions')"><img alt="expand/collapse" src="expand.png" id="section_details_PTAB Details Page @Related Petitions_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_PTAB Details Page @Related Petitions">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Related Petitions"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">3.35</td><td align="right">223763</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">3.12</td><td align="right">223763</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Docket Entries</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/ptabs/4138">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">2.99 sec</td><td align="right">2.96 sec</td><td align="right">3.01 sec</td><td align="center"><a href="javascript:change('section_details_PTAB Details Page @Docket Entries')"><img alt="expand/collapse" src="expand.png" id="section_details_PTAB Details Page @Docket Entries_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_PTAB Details Page @Docket Entries">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Docket Entries"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">3.01</td><td align="right">223763</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">2.96</td><td align="right">223763</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Total Page Load</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/ptabs/4138">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">3.38 sec</td><td align="right">3.35 sec</td><td align="right">3.42 sec</td><td align="center"><a href="javascript:change('section_details_PTAB Details Page @Total Page Load')"><img alt="expand/collapse" src="expand.png" id="section_details_PTAB Details Page @Total Page Load_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_PTAB Details Page @Total Page Load">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Total Page Load"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">3.42</td><td align="right">223763</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">3.35</td><td align="right">223763</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th style="width:15%;">Page Name</th><th>Section Name</th><th>Page URL</th><th># Number Of Iterations</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th></th>
+</tr>
+<tr valign="top" class="">
+<td align="center" rowspan="6"><strong>Venue Details Page </strong></td><td align="left">Basic Page Load</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/venues/96476">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">0.96 sec</td><td align="right">0.92 sec</td><td align="right">1 sec</td><td align="center"><a href="javascript:change('section_details_Venue Details Page @Basic Page Load')"><img alt="expand/collapse" src="expand.png" id="section_details_Venue Details Page @Basic Page Load_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Venue Details Page @Basic Page Load">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Basic Page Load"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">0.92</td><td align="right">150798</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">1.00</td><td align="right">150841</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Judge Profile</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/venues/96476">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1.98 sec</td><td align="right">1.72 sec</td><td align="right">2.25 sec</td><td align="center"><a href="javascript:change('section_details_Venue Details Page @Judge Profile')"><img alt="expand/collapse" src="expand.png" id="section_details_Venue Details Page @Judge Profile_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Venue Details Page @Judge Profile">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Judge Profile"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">2.25</td><td align="right">139151</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">1.72</td><td align="right">133288</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Litigation</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/venues/96476">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">2.85 sec</td><td align="right">2.77 sec</td><td align="right">2.94 sec</td><td align="center"><a href="javascript:change('section_details_Venue Details Page @Litigation')"><img alt="expand/collapse" src="expand.png" id="section_details_Venue Details Page @Litigation_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Venue Details Page @Litigation">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Litigation"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">2.77</td><td align="right">150848</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">2.94</td><td align="right">150848</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Recent Activity</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/venues/96476">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">2.01 sec</td><td align="right">1.68 sec</td><td align="right">2.34 sec</td><td align="center"><a href="javascript:change('section_details_Venue Details Page @Recent Activity')"><img alt="expand/collapse" src="expand.png" id="section_details_Venue Details Page @Recent Activity_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Venue Details Page @Recent Activity">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Recent Activity"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">1.68</td><td align="right">139154</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">2.34</td><td align="right">150841</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Cases By MarketSector</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/venues/96476">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1.99 sec</td><td align="right">1.68 sec</td><td align="right">2.3 sec</td><td align="center"><a href="javascript:change('section_details_Venue Details Page @Cases By MarketSector')"><img alt="expand/collapse" src="expand.png" id="section_details_Venue Details Page @Cases By MarketSector_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Venue Details Page @Cases By MarketSector">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Cases By MarketSector"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">2.30</td><td align="right">139150</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">1.68</td><td align="right">139153</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Total Page Load</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/venues/96476">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">2.41 sec</td><td align="right">2.28 sec</td><td align="right">2.54 sec</td><td align="center"><a href="javascript:change('section_details_Venue Details Page @Total Page Load')"><img alt="expand/collapse" src="expand.png" id="section_details_Venue Details Page @Total Page Load_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Venue Details Page @Total Page Load">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Total Page Load"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">2.54</td><td align="right">150843</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">2.28</td><td align="right">150846</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th style="width:15%;">Page Name</th><th>Section Name</th><th>Page URL</th><th># Number Of Iterations</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th></th>
+</tr>
+<tr valign="top" class="">
+<td align="center" rowspan="6"><strong>Judge Details Page </strong></td><td align="left">Basic Page Load</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/judges/98129">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1.08 sec</td><td align="right">0.98 sec</td><td align="right">1.18 sec</td><td align="center"><a href="javascript:change('section_details_Judge Details Page @Basic Page Load')"><img alt="expand/collapse" src="expand.png" id="section_details_Judge Details Page @Basic Page Load_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Judge Details Page @Basic Page Load">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Basic Page Load"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">1.18</td><td align="right">145001</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">0.98</td><td align="right">145005</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Judge Profile</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/judges/98129">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1.95 sec</td><td align="right">1.59 sec</td><td align="right">2.31 sec</td><td align="center"><a href="javascript:change('section_details_Judge Details Page @Judge Profile')"><img alt="expand/collapse" src="expand.png" id="section_details_Judge Details Page @Judge Profile_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Judge Details Page @Judge Profile">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Judge Profile"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">2.31</td><td align="right">145002</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">1.59</td><td align="right">145005</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Litigation</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/judges/98129">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">2.02 sec</td><td align="right">1.73 sec</td><td align="right">2.32 sec</td><td align="center"><a href="javascript:change('section_details_Judge Details Page @Litigation')"><img alt="expand/collapse" src="expand.png" id="section_details_Judge Details Page @Litigation_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Judge Details Page @Litigation">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Litigation"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">2.32</td><td align="right">145003</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">1.73</td><td align="right">145005</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Recent Activity</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/judges/98129">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1.9 sec</td><td align="right">1.69 sec</td><td align="right">2.11 sec</td><td align="center"><a href="javascript:change('section_details_Judge Details Page @Recent Activity')"><img alt="expand/collapse" src="expand.png" id="section_details_Judge Details Page @Recent Activity_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Judge Details Page @Recent Activity">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Recent Activity"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">1.69</td><td align="right">145003</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">2.11</td><td align="right">145002</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Cases By MarketSector</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/judges/98129">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">2.1 sec</td><td align="right">2.03 sec</td><td align="right">2.17 sec</td><td align="center"><a href="javascript:change('section_details_Judge Details Page @Cases By MarketSector')"><img alt="expand/collapse" src="expand.png" id="section_details_Judge Details Page @Cases By MarketSector_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Judge Details Page @Cases By MarketSector">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Cases By MarketSector"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">2.03</td><td align="right">145003</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">2.17</td><td align="right">145003</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Total Page Load</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/judges/98129">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">2.01 sec</td><td align="right">1.73 sec</td><td align="right">2.29 sec</td><td align="center"><a href="javascript:change('section_details_Judge Details Page @Total Page Load')"><img alt="expand/collapse" src="expand.png" id="section_details_Judge Details Page @Total Page Load_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Judge Details Page @Total Page Load">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Total Page Load"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">1.73</td><td align="right">145003</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">2.29</td><td align="right">145000</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th style="width:15%;">Page Name</th><th>Section Name</th><th>Page URL</th><th># Number Of Iterations</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th></th>
+</tr>
+<tr valign="top" class="">
+<td align="center" rowspan="7"><strong>ITC Details Page </strong></td><td align="left">Basic Page Load</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/itc/880">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1.95 sec</td><td align="right">1.66 sec</td><td align="right">2.24 sec</td><td align="center"><a href="javascript:change('section_details_ITC Details Page @Basic Page Load')"><img alt="expand/collapse" src="expand.png" id="section_details_ITC Details Page @Basic Page Load_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_ITC Details Page @Basic Page Load">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Basic Page Load"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">2.24</td><td align="right">195484</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">1.66</td><td align="right">195484</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Complainants</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/itc/880">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1.87 sec</td><td align="right">1.63 sec</td><td align="right">2.11 sec</td><td align="center"><a href="javascript:change('section_details_ITC Details Page @Complainants')"><img alt="expand/collapse" src="expand.png" id="section_details_ITC Details Page @Complainants_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_ITC Details Page @Complainants">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Complainants"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">2.11</td><td align="right">66425</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">1.63</td><td align="right">66425</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Respondents</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/itc/880">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">2.48 sec</td><td align="right">2.47 sec</td><td align="right">2.49 sec</td><td align="center"><a href="javascript:change('section_details_ITC Details Page @Respondents')"><img alt="expand/collapse" src="expand.png" id="section_details_ITC Details Page @Respondents_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_ITC Details Page @Respondents">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Respondents"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">2.49</td><td align="right">66425</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">2.47</td><td align="right">66425</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Patent In Suit</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/itc/880">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">2.24 sec</td><td align="right">1.92 sec</td><td align="right">2.56 sec</td><td align="center"><a href="javascript:change('section_details_ITC Details Page @Patent In Suit')"><img alt="expand/collapse" src="expand.png" id="section_details_ITC Details Page @Patent In Suit_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_ITC Details Page @Patent In Suit">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Patent In Suit"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">2.56</td><td align="right">66425</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">1.92</td><td align="right">66425</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Litigation Campaigns</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/itc/880">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">3.56 sec</td><td align="right">3.12 sec</td><td align="right">4 sec</td><td align="center"><a href="javascript:change('section_details_ITC Details Page @Litigation Campaigns')"><img alt="expand/collapse" src="expand.png" id="section_details_ITC Details Page @Litigation Campaigns_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_ITC Details Page @Litigation Campaigns">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Litigation Campaigns"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">4.00</td><td align="right">195484</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">3.12</td><td align="right">195484</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Docket Entries</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/itc/880">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1.68 sec</td><td align="right">1.66 sec</td><td align="right">1.7 sec</td><td align="center"><a href="javascript:change('section_details_ITC Details Page @Docket Entries')"><img alt="expand/collapse" src="expand.png" id="section_details_ITC Details Page @Docket Entries_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_ITC Details Page @Docket Entries">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Docket Entries"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">1.66</td><td align="right">66425</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">1.7</td><td align="right">66425</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Total Page Load</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/itc/880">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">3.94 sec</td><td align="right">3.94 sec</td><td align="right">3.94 sec</td><td align="center"><a href="javascript:change('section_details_ITC Details Page @Total Page Load')"><img alt="expand/collapse" src="expand.png" id="section_details_ITC Details Page @Total Page Load_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_ITC Details Page @Total Page Load">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Total Page Load"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">3.94</td><td align="right">195484</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">3.94</td><td align="right">195484</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th style="width:15%;">Page Name</th><th>Section Name</th><th>Page URL</th><th># Number Of Iterations</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th></th>
+</tr>
+<tr valign="top" class="">
+<td align="center" rowspan="9"><strong>Patents Details Page </strong></td><td align="left">Basic Page Load</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/pat/US6179053B1">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">2.77 sec</td><td align="right">1.94 sec</td><td align="right">3.61 sec</td><td align="center"><a href="javascript:change('section_details_Patents Details Page @Basic Page Load')"><img alt="expand/collapse" src="expand.png" id="section_details_Patents Details Page @Basic Page Load_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Patents Details Page @Basic Page Load">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Basic Page Load"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">3.61</td><td align="right">229731</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">1.94</td><td align="right">229731</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Litigation Campaigns</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/pat/US6179053B1">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">2.9 sec</td><td align="right">2.72 sec</td><td align="right">3.08 sec</td><td align="center"><a href="javascript:change('section_details_Patents Details Page @Litigation Campaigns')"><img alt="expand/collapse" src="expand.png" id="section_details_Patents Details Page @Litigation Campaigns_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Patents Details Page @Litigation Campaigns">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Litigation Campaigns"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">3.08</td><td align="right">229731</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">2.72</td><td align="right">229731</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Petitons</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/pat/US6179053B1">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">2.93 sec</td><td align="right">2.88 sec</td><td align="right">2.99 sec</td><td align="center"><a href="javascript:change('section_details_Patents Details Page @Petitons')"><img alt="expand/collapse" src="expand.png" id="section_details_Patents Details Page @Petitons_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Patents Details Page @Petitons">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Petitons"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">2.88</td><td align="right">229731</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">2.99</td><td align="right">229731</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Accused Products</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/pat/US6179053B1">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">2.76 sec</td><td align="right">2.75 sec</td><td align="right">2.77 sec</td><td align="center"><a href="javascript:change('section_details_Patents Details Page @Accused Products')"><img alt="expand/collapse" src="expand.png" id="section_details_Patents Details Page @Accused Products_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Patents Details Page @Accused Products">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Accused Products"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">2.75</td><td align="right">229731</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">2.77</td><td align="right">229731</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Assignments</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/pat/US6179053B1">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">2.81 sec</td><td align="right">2.79 sec</td><td align="right">2.83 sec</td><td align="center"><a href="javascript:change('section_details_Patents Details Page @Assignments')"><img alt="expand/collapse" src="expand.png" id="section_details_Patents Details Page @Assignments_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Patents Details Page @Assignments">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Assignments"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">2.83</td><td align="right">229731</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">2.79</td><td align="right">229731</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Citations</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/pat/US6179053B1">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">2.54 sec</td><td align="right">2.08 sec</td><td align="right">2.99 sec</td><td align="center"><a href="javascript:change('section_details_Patents Details Page @Citations')"><img alt="expand/collapse" src="expand.png" id="section_details_Patents Details Page @Citations_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Patents Details Page @Citations">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Citations"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">2.08</td><td align="right">229731</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">2.99</td><td align="right">229731</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Claims</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/pat/US6179053B1">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">2.98 sec</td><td align="right">2.96 sec</td><td align="right">3 sec</td><td align="center"><a href="javascript:change('section_details_Patents Details Page @Claims')"><img alt="expand/collapse" src="expand.png" id="section_details_Patents Details Page @Claims_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Patents Details Page @Claims">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Claims"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">2.96</td><td align="right">229731</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">3</td><td align="right">229731</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Family_Member</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/pat/US6179053B1">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">3 sec</td><td align="right">2.99 sec</td><td align="right">3.02 sec</td><td align="center"><a href="javascript:change('section_details_Patents Details Page @Family_Member')"><img alt="expand/collapse" src="expand.png" id="section_details_Patents Details Page @Family_Member_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Patents Details Page @Family_Member">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Family_Member"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">3.02</td><td align="right">229731</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">2.99</td><td align="right">229731</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Total Page Load</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/pat/US6179053B1">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">3.16 sec</td><td align="right">3.15 sec</td><td align="right">3.17 sec</td><td align="center"><a href="javascript:change('section_details_Patents Details Page @Total Page Load')"><img alt="expand/collapse" src="expand.png" id="section_details_Patents Details Page @Total Page Load_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Patents Details Page @Total Page Load">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Total Page Load"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">3.17</td><td align="right">229731</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">3.15</td><td align="right">229731</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th style="width:15%;">Page Name</th><th>Section Name</th><th>Page URL</th><th># Number Of Iterations</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th></th>
+</tr>
+<tr valign="top" class="">
+<td align="center" rowspan="7"><strong>Portfolio Details Page </strong></td><td align="left">Basic Page Load</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/portfolios/917984">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">4.38 sec</td><td align="right">3.51 sec</td><td align="right">5.24 sec</td><td align="center"><a href="javascript:change('section_details_Portfolio Details Page @Basic Page Load')"><img alt="expand/collapse" src="expand.png" id="section_details_Portfolio Details Page @Basic Page Load_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Portfolio Details Page @Basic Page Load">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Basic Page Load"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">5.24</td><td align="right">48468</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">3.51</td><td align="right">47335</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Overview</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/portfolios/917984">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">3.7 sec</td><td align="right">3.41 sec</td><td align="right">3.98 sec</td><td align="center"><a href="javascript:change('section_details_Portfolio Details Page @Overview')"><img alt="expand/collapse" src="expand.png" id="section_details_Portfolio Details Page @Overview_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Portfolio Details Page @Overview">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Overview"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">3.41</td><td align="right">48468</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">3.98</td><td align="right">48468</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Assignments</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/portfolios/917984">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">3.11 sec</td><td align="right">3.1 sec</td><td align="right">3.13 sec</td><td align="center"><a href="javascript:change('section_details_Portfolio Details Page @Assignments')"><img alt="expand/collapse" src="expand.png" id="section_details_Portfolio Details Page @Assignments_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Portfolio Details Page @Assignments">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Assignments"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">3.10</td><td align="right">47335</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">3.13</td><td align="right">47335</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Representive Claims</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/portfolios/917984">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">3.4 sec</td><td align="right">3.27 sec</td><td align="right">3.53 sec</td><td align="center"><a href="javascript:change('section_details_Portfolio Details Page @Representive Claims')"><img alt="expand/collapse" src="expand.png" id="section_details_Portfolio Details Page @Representive Claims_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Portfolio Details Page @Representive Claims">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Representive Claims"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">3.53</td><td align="right">48468</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">3.27</td><td align="right">47335</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Assets</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/portfolios/917984">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">3.34 sec</td><td align="right">3.23 sec</td><td align="right">3.45 sec</td><td align="center"><a href="javascript:change('section_details_Portfolio Details Page @Assets')"><img alt="expand/collapse" src="expand.png" id="section_details_Portfolio Details Page @Assets_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Portfolio Details Page @Assets">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Assets"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">3.45</td><td align="right">47335</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">3.23</td><td align="right">47335</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Tags</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/portfolios/917984">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">3.37 sec</td><td align="right">3.26 sec</td><td align="right">3.48 sec</td><td align="center"><a href="javascript:change('section_details_Portfolio Details Page @Tags')"><img alt="expand/collapse" src="expand.png" id="section_details_Portfolio Details Page @Tags_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Portfolio Details Page @Tags">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Tags"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">3.48</td><td align="right">47335</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">3.26</td><td align="right">48468</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Total Page Load</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/portfolios/917984">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">3.84 sec</td><td align="right">3.82 sec</td><td align="right">3.85 sec</td><td align="center"><a href="javascript:change('section_details_Portfolio Details Page @Total Page Load')"><img alt="expand/collapse" src="expand.png" id="section_details_Portfolio Details Page @Total Page Load_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Portfolio Details Page @Total Page Load">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Total Page Load"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">3.85</td><td align="right">48468</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">3.82</td><td align="right">48468</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th style="width:15%;">Page Name</th><th>Section Name</th><th>Page URL</th><th># Number Of Iterations</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th></th>
+</tr>
+<tr valign="top" class="">
+<td align="center" rowspan="10"><strong>Acquisition Details Page </strong></td><td align="left">Basic Page Load</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/acquisitions/4085">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">6.2 sec</td><td align="right">5.75 sec</td><td align="right">6.69 sec</td><td align="center"><a href="javascript:change('section_details_Acquisition Details Page @Basic Page Load')"><img alt="expand/collapse" src="expand.png" id="section_details_Acquisition Details Page @Basic Page Load_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Acquisition Details Page @Basic Page Load">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Basic Page Load"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">6.69</td><td align="right">430000</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">5.75</td><td align="right">430000</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">TimeLine</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/acquisitions/4085">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">6.45 sec</td><td align="right">6.23 sec</td><td align="right">6.68 sec</td><td align="center"><a href="javascript:change('section_details_Acquisition Details Page @TimeLine')"><img alt="expand/collapse" src="expand.png" id="section_details_Acquisition Details Page @TimeLine_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Acquisition Details Page @TimeLine">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "TimeLine"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">6.68</td><td align="right">430000</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">6.23</td><td align="right">430000</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Assignee</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/acquisitions/4085">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">6.55 sec</td><td align="right">6.24 sec</td><td align="right">6.95 sec</td><td align="center"><a href="javascript:change('section_details_Acquisition Details Page @Assignee')"><img alt="expand/collapse" src="expand.png" id="section_details_Acquisition Details Page @Assignee_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Acquisition Details Page @Assignee">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Assignee"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">6.95</td><td align="right">430000</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">6.24</td><td align="right">430000</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Representive Claims</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/acquisitions/4085">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">6.35 sec</td><td align="right">6.14 sec</td><td align="right">6.63 sec</td><td align="center"><a href="javascript:change('section_details_Acquisition Details Page @Representive Claims')"><img alt="expand/collapse" src="expand.png" id="section_details_Acquisition Details Page @Representive Claims_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Acquisition Details Page @Representive Claims">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Representive Claims"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">6.63</td><td align="right">430000</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">6.14</td><td align="right">430000</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Seller Broker Info</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/acquisitions/4085">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">6.25 sec</td><td align="right">5.67 sec</td><td align="right">6.85 sec</td><td align="center"><a href="javascript:change('section_details_Acquisition Details Page @Seller Broker Info')"><img alt="expand/collapse" src="expand.png" id="section_details_Acquisition Details Page @Seller Broker Info_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Acquisition Details Page @Seller Broker Info">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Seller Broker Info"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">5.67</td><td align="right">430000</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">6.85</td><td align="right">430000</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Assignments</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/acquisitions/4085">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">6.15 sec</td><td align="right">5.96 sec</td><td align="right">6.41 sec</td><td align="center"><a href="javascript:change('section_details_Acquisition Details Page @Assignments')"><img alt="expand/collapse" src="expand.png" id="section_details_Acquisition Details Page @Assignments_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Acquisition Details Page @Assignments">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Assignments"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">6.41</td><td align="right">430000</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">5.96</td><td align="right">430000</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Documents</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/acquisitions/4085">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">6.45 sec</td><td align="right">6.09 sec</td><td align="right">6.89 sec</td><td align="center"><a href="javascript:change('section_details_Acquisition Details Page @Documents')"><img alt="expand/collapse" src="expand.png" id="section_details_Acquisition Details Page @Documents_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Acquisition Details Page @Documents">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Documents"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">6.89</td><td align="right">430000</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">6.09</td><td align="right">430000</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Patent Information</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/acquisitions/4085">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">6.6 sec</td><td align="right">6.11 sec</td><td align="right">7.13 sec</td><td align="center"><a href="javascript:change('section_details_Acquisition Details Page @Patent Information')"><img alt="expand/collapse" src="expand.png" id="section_details_Acquisition Details Page @Patent Information_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Acquisition Details Page @Patent Information">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Patent Information"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">6.11</td><td align="right">430000</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">7.13</td><td align="right">430000</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Tags</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/acquisitions/4085">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">7 sec</td><td align="right">6.88 sec</td><td align="right">7.19 sec</td><td align="center"><a href="javascript:change('section_details_Acquisition Details Page @Tags')"><img alt="expand/collapse" src="expand.png" id="section_details_Acquisition Details Page @Tags_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Acquisition Details Page @Tags">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Tags"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">6.88</td><td align="right">430000</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">7.19</td><td align="right">430000</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Total Page Load</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/acquisitions/4085">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">6.75 sec</td><td align="right">6.45 sec</td><td align="right">7.13 sec</td><td align="center"><a href="javascript:change('section_details_Acquisition Details Page @Total Page Load')"><img alt="expand/collapse" src="expand.png" id="section_details_Acquisition Details Page @Total Page Load_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Acquisition Details Page @Total Page Load">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Total Page Load"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">7.13</td><td align="right">430000</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">6.45</td><td align="right">430000</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th style="width:15%;">Page Name</th><th>Section Name</th><th>Page URL</th><th># Number Of Iterations</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th></th>
+</tr>
+<tr valign="top" class="">
+<td align="center" rowspan="4"><strong>All Search Page </strong></td><td align="left"> Search with Litigation Case No</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/advanced_search/search_all#grouped=true&amp;searchq=0%3A12-cv-01315&amp;utf8=%E2%9C%93">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">8 sec</td><td align="right">7.39 sec</td><td align="right">8.69 sec</td><td align="center"><a href="javascript:change('section_details_All Search Page @ Search with Litigation Case No')"><img alt="expand/collapse" src="expand.png" id="section_details_All Search Page @ Search with Litigation Case No_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_All Search Page @ Search with Litigation Case No">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section " Search with Litigation Case No"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">8.69</td><td align="right">39684</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">7.39</td><td align="right">40018</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Search with Entity</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/advanced_search/search_all#grouped=true&amp;searchq=Samsung+Electronics+Co.+Ltd.&amp;utf8=%E2%9C%93">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">2.9 sec</td><td align="right">0.14 sec</td><td align="right">5.66 sec</td><td align="center"><a href="javascript:change('section_details_All Search Page @Search with Entity')"><img alt="expand/collapse" src="expand.png" id="section_details_All Search Page @Search with Entity_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_All Search Page @Search with Entity">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Search with Entity"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">5.66</td><td align="right">426742</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">0.14</td><td align="right">426742</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Search with Patent</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/advanced_search/search_all#grouped=true&amp;searchq=US+5,995,468+A1&amp;utf8=%E2%9C%93">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1.91 sec</td><td align="right">0.13 sec</td><td align="right">3.7 sec</td><td align="center"><a href="javascript:change('section_details_All Search Page @Search with Patent')"><img alt="expand/collapse" src="expand.png" id="section_details_All Search Page @Search with Patent_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_All Search Page @Search with Patent">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Search with Patent"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">3.70</td><td align="right">44495</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">0.13</td><td align="right">44495</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">WildCard  Search</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/advanced_search/search_all#grouped=true&amp;utf8=%E2%9C%93">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">4.46 sec</td><td align="right">0.35 sec</td><td align="right">8.57 sec</td><td align="center"><a href="javascript:change('section_details_All Search Page @WildCard  Search')"><img alt="expand/collapse" src="expand.png" id="section_details_All Search Page @WildCard  Search_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_All Search Page @WildCard  Search">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "WildCard  Search"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">8.57</td><td align="right">200959</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">0.35</td><td align="right">200959</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th style="width:15%;">Page Name</th><th>Section Name</th><th>Page URL</th><th># Number Of Iterations</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th></th>
+</tr>
+<tr valign="top" class="">
+<td align="center" rowspan="4"><strong>Litigation Search Page </strong></td><td align="left">WildCard Search</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/advanced_search/search_litigations#grouped=true&amp;utf8=%E2%9C%93">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1.87 sec</td><td align="right">0.13 sec</td><td align="right">3.61 sec</td><td align="center"><a href="javascript:change('section_details_Litigation Search Page @WildCard Search')"><img alt="expand/collapse" src="expand.png" id="section_details_Litigation Search Page @WildCard Search_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Litigation Search Page @WildCard Search">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "WildCard Search"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">3.61</td><td align="right">175846</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">0.13</td><td align="right">175846</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Search with Case No</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/advanced_search/search_litigations#grouped=true&amp;searchq=337-TA-434">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">2.94 sec</td><td align="right">1.74 sec</td><td align="right">4.13 sec</td><td align="center"><a href="javascript:change('section_details_Litigation Search Page @Search with Case No')"><img alt="expand/collapse" src="expand.png" id="section_details_Litigation Search Page @Search with Case No_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Litigation Search Page @Search with Case No">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Search with Case No"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">4.13</td><td align="right">120057</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">1.74</td><td align="right">122758</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Search with Entity</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/advanced_search/search_litigations#grouped=true&amp;searchq=SanDisk+Corporation+&amp;utf8=%E2%9C%93">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1.67 sec</td><td align="right">0.12 sec</td><td align="right">3.23 sec</td><td align="center"><a href="javascript:change('section_details_Litigation Search Page @Search with Entity')"><img alt="expand/collapse" src="expand.png" id="section_details_Litigation Search Page @Search with Entity_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Litigation Search Page @Search with Entity">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Search with Entity"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">3.23</td><td align="right">180213</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">0.12</td><td align="right">180213</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Search with Patent</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/advanced_search/search_litigations#grouped=true&amp;searchq=US+6,038,295+A1&amp;utf8=%E2%9C%93">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1.53 sec</td><td align="right">0.12 sec</td><td align="right">2.94 sec</td><td align="center"><a href="javascript:change('section_details_Litigation Search Page @Search with Patent')"><img alt="expand/collapse" src="expand.png" id="section_details_Litigation Search Page @Search with Patent_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Litigation Search Page @Search with Patent">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Search with Patent"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">2.94</td><td align="right">116115</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">0.12</td><td align="right">116115</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th style="width:15%;">Page Name</th><th>Section Name</th><th>Page URL</th><th># Number Of Iterations</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th></th>
+</tr>
+<tr valign="top" class="">
+<td align="center" rowspan="2"><strong>Entity Search Page </strong></td><td align="left">WildCard Search</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/advanced_search/search_entities#grouped=true&amp;utf8=%E2%9C%93">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1.49 sec</td><td align="right">0.07 sec</td><td align="right">2.91 sec</td><td align="center"><a href="javascript:change('section_details_Entity Search Page @WildCard Search')"><img alt="expand/collapse" src="expand.png" id="section_details_Entity Search Page @WildCard Search_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Entity Search Page @WildCard Search">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "WildCard Search"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">2.91</td><td align="right">166789</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">0.07</td><td align="right">166789</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Search With Entity</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/advanced_search/search_entities#grouped=true&amp;searchq=Texas+Instruments&amp;utf8=%E2%9C%93">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1.06 sec</td><td align="right">0.23 sec</td><td align="right">1.89 sec</td><td align="center"><a href="javascript:change('section_details_Entity Search Page @Search With Entity')"><img alt="expand/collapse" src="expand.png" id="section_details_Entity Search Page @Search With Entity_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Entity Search Page @Search With Entity">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Search With Entity"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">1.89</td><td align="right">76219</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">0.23</td><td align="right">76219</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th style="width:15%;">Page Name</th><th>Section Name</th><th>Page URL</th><th># Number Of Iterations</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th></th>
+</tr>
+<tr valign="top" class="">
+<td align="center" rowspan="2"><strong>Patents Search Page - Wild Card </strong></td><td align="left">Result Table</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/advanced_search/search_patents#grouped=true&amp;utf8=%E2%9C%93">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">2.46 sec</td><td align="right">0.12 sec</td><td align="right">4.8 sec</td><td align="center"><a href="javascript:change('section_details_Patents Search Page - Wild Card @Result Table')"><img alt="expand/collapse" src="expand.png" id="section_details_Patents Search Page - Wild Card @Result Table_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Patents Search Page - Wild Card @Result Table">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Result Table"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">4.80</td><td align="right">166785</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">0.12</td><td align="right">166785</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left"> Patent Families Count</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/advanced_search/search_patents#grouped=true&amp;utf8=%E2%9C%93">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">0.14 sec</td><td align="right">0.12 sec</td><td align="right">0.16 sec</td><td align="center"><a href="javascript:change('section_details_Patents Search Page - Wild Card @ Patent Families Count')"><img alt="expand/collapse" src="expand.png" id="section_details_Patents Search Page - Wild Card @ Patent Families Count_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Patents Search Page - Wild Card @ Patent Families Count">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section " Patent Families Count"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">0.12</td><td align="right">166785</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">0.16</td><td align="right">166785</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th style="width:15%;">Page Name</th><th>Section Name</th><th>Page URL</th><th># Number Of Iterations</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th></th>
+</tr>
+<tr valign="top" class="">
+<td align="center" rowspan="2"><strong>Patents Search Page - Search With Patent </strong></td><td align="left">Result Table</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/advanced_search/search_patents#grouped=true&amp;searchq=US+8,285,648+B2&amp;utf8=%E2%9C%93">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1.63 sec</td><td align="right">0.89 sec</td><td align="right">2.38 sec</td><td align="center"><a href="javascript:change('section_details_Patents Search Page - Search With Patent @Result Table')"><img alt="expand/collapse" src="expand.png" id="section_details_Patents Search Page - Search With Patent @Result Table_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Patents Search Page - Search With Patent @Result Table">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Result Table"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">2.38</td><td align="right">63236</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">0.89</td><td align="right">65926</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left"> Patent Families Count</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/advanced_search/search_patents#grouped=true&amp;searchq=US+8,285,648+B2&amp;utf8=%E2%9C%93">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1.74 sec</td><td align="right">1.5 sec</td><td align="right">1.97 sec</td><td align="center"><a href="javascript:change('section_details_Patents Search Page - Search With Patent @ Patent Families Count')"><img alt="expand/collapse" src="expand.png" id="section_details_Patents Search Page - Search With Patent @ Patent Families Count_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Patents Search Page - Search With Patent @ Patent Families Count">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section " Patent Families Count"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">1.97</td><td align="right">64581</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">1.50</td><td align="right">67287</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th style="width:15%;">Page Name</th><th>Section Name</th><th>Page URL</th><th># Number Of Iterations</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th></th>
+</tr>
+<tr valign="top" class="">
+<td align="center" rowspan="2"><strong>Patents Search Page - Search With Entity</strong></td><td align="left">Result Table</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/advanced_search/search_patents#grouped=true&amp;searchq=Juniper+Networks+Incorporated&amp;utf8=%E2%9C%93">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1.62 sec</td><td align="right">0.09 sec</td><td align="right">3.15 sec</td><td align="center"><a href="javascript:change('section_details_Patents Search Page - Search With Entity@Result Table')"><img alt="expand/collapse" src="expand.png" id="section_details_Patents Search Page - Search With Entity@Result Table_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Patents Search Page - Search With Entity@Result Table">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Result Table"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">3.15</td><td align="right">181765</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">0.09</td><td align="right">181765</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left"> Patent Families Count</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/advanced_search/search_patents#grouped=true&amp;searchq=Juniper+Networks+Incorporated&amp;utf8=%E2%9C%93">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">0.11 sec</td><td align="right">0.1 sec</td><td align="right">0.11 sec</td><td align="center"><a href="javascript:change('section_details_Patents Search Page - Search With Entity@ Patent Families Count')"><img alt="expand/collapse" src="expand.png" id="section_details_Patents Search Page - Search With Entity@ Patent Families Count_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Patents Search Page - Search With Entity@ Patent Families Count">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section " Patent Families Count"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">0.10</td><td align="right">181765</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">0.11</td><td align="right">181765</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th style="width:15%;">Page Name</th><th>Section Name</th><th>Page URL</th><th># Number Of Iterations</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th></th>
+</tr>
+<tr valign="top" class="">
+<td align="center" rowspan="2"><strong>MarketPlace Search Page </strong></td><td align="left">WildCard  Search</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/advanced_search/search_marketplaces#grouped=true&amp;searchq=US+8,776,002+B2%09&amp;utf8=%E2%9C%93">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1.26 sec</td><td align="right">0.1 sec</td><td align="right">2.42 sec</td><td align="center"><a href="javascript:change('section_details_MarketPlace Search Page @WildCard  Search')"><img alt="expand/collapse" src="expand.png" id="section_details_MarketPlace Search Page @WildCard  Search_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_MarketPlace Search Page @WildCard  Search">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "WildCard  Search"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">2.42</td><td align="right">56080</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">0.10</td><td align="right">56080</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left"> Search With Patent</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/advanced_search/search_marketplaces#grouped=true&amp;searchq=US+8,776,002+B2%09&amp;utf8=%E2%9C%93">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1.23 sec</td><td align="right">0.1 sec</td><td align="right">2.36 sec</td><td align="center"><a href="javascript:change('section_details_MarketPlace Search Page @ Search With Patent')"><img alt="expand/collapse" src="expand.png" id="section_details_MarketPlace Search Page @ Search With Patent_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_MarketPlace Search Page @ Search With Patent">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section " Search With Patent"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">2.36</td><td align="right">56080</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">0.1</td><td align="right">56080</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th style="width:15%;">Page Name</th><th>Section Name</th><th>Page URL</th><th># Number Of Iterations</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th></th>
+</tr>
+<tr valign="top" class="">
+<td align="center" rowspan="2"><strong>Portfolios Search Page </strong></td><td align="left">WildCard  Search</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/advanced_search/search_portfolios#grouped=true&amp;searchq=US+20060079214A1&amp;utf8=%E2%9C%93">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">2.14 sec</td><td align="right">0.13 sec</td><td align="right">4.15 sec</td><td align="center"><a href="javascript:change('section_details_Portfolios Search Page @WildCard  Search')"><img alt="expand/collapse" src="expand.png" id="section_details_Portfolios Search Page @WildCard  Search_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Portfolios Search Page @WildCard  Search">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "WildCard  Search"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">4.15</td><td align="right">172791</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">0.13</td><td align="right">172791</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td align="left">Search With Patent</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/advanced_search/search_portfolios#grouped=true&amp;searchq=US+20060079214A1&amp;utf8=%E2%9C%93">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">2.04 sec</td><td align="right">0.12 sec</td><td align="right">3.95 sec</td><td align="center"><a href="javascript:change('section_details_Portfolios Search Page @Search With Patent')"><img alt="expand/collapse" src="expand.png" id="section_details_Portfolios Search Page @Search With Patent_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_Portfolios Search Page @Search With Patent">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "Search With Patent"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">3.95</td><td align="right">172791</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">0.12</td><td align="right">172791</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details" align="center">
+<tr valign="top">
+<th style="width:15%;">Page Name</th><th>Section Name</th><th>Page URL</th><th># Number Of Iterations</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th></th>
+</tr>
+<tr valign="top" class="">
+<td align="center"><strong>News Search Page </strong></td><td align="left">WildCard Search</td><td align="center"><a target="_blank" href="https://insight.rpxcorp.com/news/details">
+						URL Link						
+					</a></td><td align="center">2</td><td align="center">0</td><td align="right">100.00%</td><td align="right">1.48 sec</td><td align="right">1.34 sec</td><td align="right">1.62 sec</td><td align="center"><a href="javascript:change('section_details_News Search Page @WildCard Search')"><img alt="expand/collapse" src="expand.png" id="section_details_News Search Page @WildCard Search_image"></a></td>
+</tr>
+<tr class="page_details" id="section_details_News Search Page @WildCard Search">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Section "WildCard Search"</b>
+<table width="95%" cellspacing="1" cellpadding="1" border="0" bgcolor="#2674A6" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (seconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">1</td><td align="right">1.62</td><td align="right">55075</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Performance Test 1-1</td><td align="center">2</td><td align="right">1.34</td><td align="right">55075</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

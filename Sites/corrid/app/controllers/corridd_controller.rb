@@ -1,0 +1,2 @@
+class CorriddController < ApplicationController
+end

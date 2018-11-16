@@ -1,0 +1,30 @@
+https://archive.apache.org/dist/jmeter/binaries/            -------jmeter 
+http://toolsqa.com/jmeter/download-and-installation-jmeter/
+https://jmeter.apache.org/usermanual/jmeter_proxy_step_by_step.pdf
+https://jmeter.apache.org/usermanual/build-web-test-plan.html
+https://stackoverflow.com/questions/35765802/unable-to-record-https-website-in-jmeter
+
+
+[
+https://www.softwaretestingmaterial.com/install-apache-ant/
+
+http://www.inanzzz.com/index.php/post/6wd2/running-ant-build-xml-script-with-jenkins
+
+https://ant.apache.org/manual/Tasks/copy.html
+
+
+(write code in notepad++ and save it as .xml file)
+invoke ant( build.xml) from jenkins
+create a job 
+After job has been created click dropdown from the job created
+click on configure
+In Build Environment check 'With Ant"
+In Build click Advanced and add build.xml in Build File text box
+Click Apply
+Then click Build now from the job created dropdown.
+first job will be build
+then click console output from the build history
+output should show build successful, total time and Finished status
+]
+
+

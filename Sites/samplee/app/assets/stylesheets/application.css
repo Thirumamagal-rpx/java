@@ -1,0 +1,60 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body { padding-top: 100px; }
+footer { margin-top: 100px; }
+/*table, td, th { vertical-align: middle; border: none; }*/
+th { border-bottom: 1px solid #DDD; }
+
+.navbar-fixed-top {
+    top: 0;
+    border-width: 25px 40px 25px;
+    background-color: #d9d8d8;
+}
+
+
+
+img {
+    vertical-align: middle;
+    background-color: dimgray;
+}
+
+.idea{
+  margin-top: 50px;
+  text-align: justify;
+ }
+
+.single_image {
+  padding-left: 200px;
+  padding-top: 25px;
+ 
+}
+
+
+   .cometo{  padding:20px;  margin: 0;padding-right: 40px;float:right;  }
+       .We{   padding-right:20px;   padding-left:20px; color: white;  }
+       .Apps{   padding-right:20px;   padding-left:20px; color: white; }
+       .signup{   padding-right:20px;   padding-left:20px;color: white;}
+       .w3{   padding-right:15px;   padding-left:20px;color: white;}
+
+#footer {
+        background-color: lightgrey;
+    color: black;
+    border-top: 4px none #1cbac8;
+}
+#footer .widget h3 {
+    font: 13px Montserrat, Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}

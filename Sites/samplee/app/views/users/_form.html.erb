@@ -1,0 +1,39 @@
+<%= form_with(model: user, local: true) do |form| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="row">
+  <div class="col-md-4 col-md-offset-4">
+    <h1>Sign up</h1><br>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :user_name, :required => true, :pattern=> '^[A-Z][a-zA-Z]{3,}(?: [A-Z][a-zA-Z]*){0,2}$' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :email %>
+    <%= form.email_field :email, id: :user_email, :required => true, :pattern => '[^@]+@[^@]+\.[a-zA-Z]{2,6}' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password %>
+    <%= form.password_field :password, id: :user_password, :required => true , :pattern=> '^(?=[^\d_].*?\d)\w(\w|[!@#$%]){7,20}'%>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Sign up", class: "btn btn-primary" %>
+  </div>
+
+</div>
+</div>
+<% end %>

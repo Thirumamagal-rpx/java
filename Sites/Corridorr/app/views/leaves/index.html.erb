@@ -1,0 +1,25 @@
+<table>
+  <thead>
+    <tr>
+      <th>Request_for</th>
+      <th>from</th>
+      <th>to</th>
+      <th>Reason for leaving</th>
+      <th colspan="3"></th>s
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @leaves.each do |leave| %>
+      <tr>
+        <td><%= leave.Request_for %></td>
+        <td><%= leave.from %></td>
+        <td><%= leave.to %></td>
+        <td><%= leave.Reason %></td>
+          <td><%= link_to 'Show', leaves_path(leave) %></td>
+        </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
